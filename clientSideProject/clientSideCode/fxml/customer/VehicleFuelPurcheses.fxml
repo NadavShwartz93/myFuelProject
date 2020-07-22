@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.customer.VehicleFuelPurchesesController">
+   <children>
+      <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="700.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+            <VBox prefHeight="700.0" prefWidth="1100.0">
+               <children>
+                  <Label text="All vehicle fuel purchases" textFill="#2449ae">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <TableView fx:id="allPurchasesTableView" minHeight="100.0" prefHeight="500.0">
+                    <columns>
+                      <TableColumn fx:id="CarLIcenseNumberCol" prefWidth="75.0" text="Car License Number" />
+                      <TableColumn fx:id="GasStationNameCol" prefWidth="75.0" text="Gas Station Name" />
+                        <TableColumn fx:id="FuelTypeCol" prefWidth="75.0" text="Fuel Type" />
+                        <TableColumn fx:id="FuelAmountCol" prefWidth="75.0" text="Fuel Amount" />
+                        <TableColumn fx:id="paymentCol" prefWidth="75.0" text="Payment" />
+                        <TableColumn fx:id="dateCol" prefWidth="75.0" text="Date" />
+                        <TableColumn fx:id="timeCol" prefWidth="75.0" text="Time" />
+                    </columns>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Monthly payments" textFill="#2449ae">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <TableView fx:id="monthlyPaymentsTableView" minHeight="100.0" prefHeight="500.0">
+                    <columns>
+                      <TableColumn fx:id="yearCol" prefWidth="75.0" text="Year" />
+                      <TableColumn fx:id="monthCol" prefWidth="75.0" text="Month" />
+                        <TableColumn fx:id="monthlyPaymentCol" prefWidth="75.0" text="Payment" />
+                    </columns>
+                     <VBox.margin>
+                        <Insets left="150.0" right="150.0" />
+                     </VBox.margin>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <StackPane minHeight="50.0" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="lblPayment" text="Payment for this month:">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                     </children>
+                  </StackPane>
+               </children>
+            </VBox>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

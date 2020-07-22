@@ -1,0 +1,15 @@
+Purchases Report:
+
+Gas Station Company:	Paz
+Gas Station Name:	Paz Karmiel
+Gas Station Manager:	tal zilbermal
+
+
+Diesel:
+	Number of Purcheses: 1
+	Total revenue: 415.50$
+
+Petrol:
+	Number of Purcheses: 1
+	Total revenue: 47784.00$
+

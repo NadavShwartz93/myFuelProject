@@ -1,0 +1,18 @@
+.button-disconnect{
+		-fx-background-color: #b30000;
+		-fx-text-fill: #f4f4f4;
+		-fx-background-radius: 4.0;
+}
+.button-disconnect-entered{
+		-fx-background-color: #ff1a1a;
+		-fx-text-fill: #f4f4f4;
+		-fx-background-radius: 4.0;
+}
+
+.button-test{
+	-fx-background-color:  #034748;
+	-fx-background-radius: 4.0;
+}
+.Text{
+	-fx-fill:white ;
+}
