@@ -25,3 +25,9 @@ written in JAVA and used MySQL DB.
 7.Open myFuelClient.jar and insert the userName and the password of the selected user and click login.
 
 ![client](client-login%20page.png).
+
+# Credit - Team Members:
+[Boaz Trauthwein](https://github.com/BoazTrauthwein)\
+[Michael Eliasof](https://github.com/elisofm)\
+[Nadav Schwarz](https://github.com/NadavShwartz93) (I am)\
+Tal Zilberman and Reham Abbas.
